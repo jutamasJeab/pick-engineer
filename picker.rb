@@ -6,6 +6,6 @@ def randomEngineer
   fileRead = fileOpen.readlines # read all name from engineers.txt
   sizeFile = fileRead.size + 1 # size from engineers.txt
   fileRandom = rand(sizeFile)
-  textRandom = textFile[fileRandom] # random name from engineers.txt
+  textRandom = fileRead[fileRandom] # random name from engineers.txt
 end
 puts randomEngineer
